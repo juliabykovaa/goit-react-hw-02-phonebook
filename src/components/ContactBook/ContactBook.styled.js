@@ -1,13 +1,11 @@
 import styled from '@emotion/styled';
 
-
 export const ContactList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 0;
-
 `;
 
 export const ContactItem = styled.li`

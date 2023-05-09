@@ -5,15 +5,14 @@ export const Form = styled.form`
   flex-direction: column;
   width: 300px;
   align-items: center;
-  
 `;
 
 export const Label = styled.label`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    text-align: left;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
 `;
 export const Input = styled.input`
   padding: 5px;

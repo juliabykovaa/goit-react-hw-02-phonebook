@@ -3,7 +3,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactBook } from './ContactBook/ContactBook';
 import { Filter } from './FilterContactBook/FilterContactBook';
 import { nanoid } from 'nanoid';
-import {Container, Header} from './App.styled'
+import { Container, Header } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -27,7 +27,6 @@ export class App extends Component {
     this.setState(({ contacts }) => ({
       contacts: [contactToadd, ...contacts],
     }));
-
   };
 
   changeFilter = e => {
@@ -40,10 +39,8 @@ export class App extends Component {
     return contacts.filter(contact =>
       contact.name.toLowerCase().includes(filterNormalized)
     );
-   
   };
 
-  
   render() {
     const { filter } = this.state;
     const filteredContacts = this.getFilteredContacts();
@@ -67,7 +64,6 @@ export class App extends Component {
           ) : (
             <p>No contacts</p>
           )}
-
         </Container>
       </>
     );
